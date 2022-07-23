@@ -6,8 +6,8 @@ module testbench();
     wire out;
 
     not_gate dut (
-      .in(in),
-      .out(out)
+        .in(in),
+        .out(out)
     );
 
     initial
@@ -25,7 +25,7 @@ module testbench();
         #10 $display("%t ns: %b - %b", $time, in, out);
         #10 $display("%t ns: %b - %b", $time, in, out);
         #10 $display("%t ns: %b - %b", $time, in, out);
-	      #10;
+	    #10;
         $stop;
     end
 
