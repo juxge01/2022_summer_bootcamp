@@ -4,12 +4,12 @@
 _start:
 
 init:
-	li a0, 8
-	li a1, 3
+	li a0, 8				## first number a0 = 8
+	li a1, 3				## second number a1 = 3
 
 ## max program
 max:
-	blt 	a0, a1, larger	## if a0 < a1 -> larger 
+	blt a0, a1, larger		## if a0 < a1 -> larger 
 	mv	t1, a0				## if a0 > a1 : max = a0
 	j	max
 	
