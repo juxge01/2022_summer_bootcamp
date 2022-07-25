@@ -10,7 +10,7 @@ init:
 ## time program(limit 119 ~ 0)
 times:
 	bge a0, t0, hour	## if(a0 >= 60) goto hour
-	mv t2, a0		## if(a0 < 60) t2(minute) = a0
+	mv t2, a0			## if(a0 < 60) t2(minute) = a0
 	j done
 	
 hour:
