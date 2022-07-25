@@ -7,8 +7,13 @@
 #	{
 #		a = 2*a;
 #		n+=1;
+#		printf("%d\n", a);
 #	}
+#	printf("\n\n%d", a);
 # }
+#
+#	a = 1 / a : 2 4 8 16 32 64 128 256 512
+#	Last a : 512
 #
 
 .section    .start
@@ -16,7 +21,7 @@
 
 _start:
 
-# t0 : n, t1: a
+# t0 : n, t1 : a, t5 : last a
 init:
 	li	t0, 1			## n = 1
 	li	t1, 1			## a = 1
@@ -31,3 +36,6 @@ Square:
 	j Square
 	
 done: mv t5, t1				## last a is storeed in t5
+
+#	a = 0x01 / a : 0x02 0x04 0x8 0x10 0x20 0x40 0x80 0x100 0x200
+#	Last a : 0x200
