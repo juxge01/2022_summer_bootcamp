@@ -15,7 +15,7 @@ times:
 	
 hour:
 	div t1, a0, t0		## t1 = 1 hour
-	sub t2, a0, t0		## t2 = 20 minutes
+	sub t2, a0, t0		## t2 = 40 minutes
 	j times
 
 done:

@@ -1,5 +1,4 @@
 ## grade with score average program
-## s0 : a, s1 : b, a0 : amount	
 .section	.start
 .global		_start
 
